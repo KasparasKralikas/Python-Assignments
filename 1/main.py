@@ -64,6 +64,10 @@ def sortByCol(array, n):
 def inverseMatrix(matrix):
     return numpy.linalg.inv(matrix)
 
+#10
+def getEigenValuesAndVector(matrix):
+    return numpy.linalg.eig(matrix)
+
 def main():
     print(numpy.arange(start=-1.3, stop=2.5, step=((2.5 - (-1.3)) / 64)))
     print(generate123Array(3))
@@ -74,4 +78,5 @@ def main():
     print(getArraySums(numpy.random.rand(3, 5)))
     print(sortByCol(numpy.random.rand(5, 5), 1))
     print(inverseMatrix(numpy.random.rand(5, 5)))
+    print(getEigenValuesAndVector(numpy.random.rand(5, 5)))
 main()

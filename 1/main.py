@@ -47,6 +47,23 @@ def generateIPlusJArray(n):
             array[i][j] = i + j
     return array
 
+#7
+def getArraySums(array):
+    dictOfSums = dict()
+    dictOfSums["array"] = array
+    dictOfSums["sumAll"] = numpy.sum(array)
+    dictOfSums["sumRows"] = numpy.sum(array, axis=1)
+    dictOfSums["sumCols"] = numpy.sum(array, axis=0)
+    return dictOfSums
+
+#8
+def sortByCol(array, n):
+    return array[numpy.argsort(array[:, n])]
+
+#9
+def inverseMatrix(matrix):
+    return numpy.linalg.inv(matrix)
+
 def main():
     print(numpy.arange(start=-1.3, stop=2.5, step=((2.5 - (-1.3)) / 64)))
     print(generate123Array(3))
@@ -54,4 +71,7 @@ def main():
     print(generateFrammedArray(10))
     print(generateChessBoard(8))
     print(generateIPlusJArray(10))
+    print(getArraySums(numpy.random.rand(3, 5)))
+    print(sortByCol(numpy.random.rand(5, 5), 1))
+    print(inverseMatrix(numpy.random.rand(5, 5)))
 main()

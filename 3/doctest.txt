@@ -1,0 +1,16 @@
+>>> from is_finite import is_finite
+>>> import math
+>>> is_finite(10)
+True
+
+>>> is_finite(math.nan)
+False
+
+>>> is_finite(math.inf)
+False
+
+>>> is_finite(float('-inf'))
+False
+
+>>> is_finite(5.643432)
+True

@@ -126,3 +126,4 @@ dmypy.json
 
 # restaurants data
 2/restaurants.json
+.vscode/c_cpp_properties.json

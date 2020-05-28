@@ -1,0 +1,17 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    {% for form in filled_forms %}
+    <h1>{{ form.subject }} </h1>
+    <h3>From: {{ form.from }}</h3>
+    <h3>To: {{ form.to }}</h3>
+    <h3>Date: {{ form.date }} </h3>
+
+    {% endfor %}
+</body>
+
+</html>
